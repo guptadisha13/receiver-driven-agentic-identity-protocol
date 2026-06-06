@@ -1,4 +1,4 @@
-# V1 - A Receiver-Driven Protocol for Agentic Identity (x402 for Identity) - V1
+# A Receiver-Driven Protocol for Agentic Identity (x402 for Identity)
 
 ## Abstract
 
