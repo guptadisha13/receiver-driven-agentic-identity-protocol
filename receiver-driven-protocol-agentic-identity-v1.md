@@ -107,7 +107,3 @@ This draft presents the foundational handshake for a receiver-driven protocol. A
 1. **Schema Governance:** Establishing a centrally governed, append-only registry (similar to the IANA HTTP header registry) to define standard parameter keys (e.g., `require_is_human`).
 2. **HTTP Header Size Limits:** Designing fallback mechanisms (such as token exchange endpoints) for scenarios where bundled credentials exceed standard 8KB server header limits.
 3. **Session Security:** Standardizing anti-replay mechanisms, such as cryptographic nonces bound to the receiver's challenge.
-
-## Conclusion & Next Steps
-
-By anchoring agentic identity in a receiver-driven protocol, the web can maintain native security boundaries without succumbing to the fragmentation of proprietary registries. Utilizing a centrally maintained parameter schema and standardized JSON structures eliminates parsing risks while enabling extreme granularity in trust delegation. We invite members of the W3C AI Agent Protocol Community Group to collaborate on standardizing the append-only `Agent-Identity` schema registry and establishing the governance framework for federated ledger roots.
