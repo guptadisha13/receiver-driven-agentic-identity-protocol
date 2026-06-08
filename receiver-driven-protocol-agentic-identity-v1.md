@@ -4,7 +4,7 @@
 
 As AI agents evolve from internal enterprise automations to cross-platform economic actors navigating the open web, the infrastructure for establishing trust has failed to keep pace. Current frameworks attempt to solve agentic identity through preemptive, fragmented developer registrations, creating siloed ecosystems and insurmountable friction. This whitepaper proposes a paradigm shift: a parameter-driven protocol where host servers dynamically dictate identity and authorization requirements at the exact moment of interaction, leveraging HTTP `401 Unauthorized` and `WWW-Authenticate` headers paired with agent-aggregated, Base64-encoded Verifiable Credentials.
 
-## 1. Introduction: The Identity Bottleneck
+## Introduction: The Identity Bottleneck
 
 The agentic economy remains fundamentally gated by trust. Historically, there has been no universal way to verify a human or business, forcing organizations to rely on fragmented vendors for individual needs.
 
@@ -15,7 +15,7 @@ The industry's current trajectory replicates this flaw by demanding preemptive d
 
 To scale, the agentic web must abandon static, pushed registrations. It requires a protocol where identity requirements are pulled dynamically by the receiver at the moment of interaction.
 
-## 2. The Use-Case Spectrum & Parameterized Demands
+## The Use-Case Spectrum & Parameterized Demands
 
 Agentic risk is highly non-uniform. Because there will be more use cases, these are just some examples of fragmented use cases and fragmented risks:
 
@@ -26,7 +26,7 @@ Agentic risk is highly non-uniform. Because there will be more use cases, these 
 
 Because these nuances cannot be flattened into rigid identity tiers (like NIST's IALs), the protocol must allow receivers to request specific, standalone parameters on demand, analogous to how the `x402` protocol dynamically dictates required payment addresses, currencies, and amounts.
 
-## 3. The Proposed Protocol Flow & Specifications
+## The Proposed Protocol Flow & Specifications
 
 The protocol operates as a dynamic handshake where the host server dictates terms, and the agent acts as the primary orchestrator to aggregate and present the necessary proofs.
 
